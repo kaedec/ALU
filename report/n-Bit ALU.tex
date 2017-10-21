@@ -1,0 +1,111 @@
+%%%Preamble
+\documentclass[12pt]{article}
+\usepackage{epsfig, amsfonts, cite, amssymb}
+\usepackage{subfigure}
+\usepackage{array}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{indentfirst}
+\usepackage{boldline}
+\usepackage{amsmath}
+
+%%% Use these when running Text Verifications
+%\usepackage[T1]{fontenc}        
+%\usepackage[utf8]{inputenc}     
+%\usepackage[adobe-utopia]{mathdesign}
+%\usepackage{printlen}
+
+\voffset=0in \hoffset=0in \textwidth=6.3in \textheight=8.3in
+\setlength{\oddsidemargin}{0in} \setlength{\textwidth}{6 in}
+\thispagestyle{empty}
+
+\begin{document}
+
+\begin{figure*}[htb]
+\subfigure{\includegraphics[width=2.5in]{wne.eps} }
+\hfil \hspace{.5in}
+\subfigure{\includegraphics[width=2.5in]{department.eps} }
+\end{figure*}
+
+%%%Header
+\begin{center}
+{\Large {\bf CPE 462/562 VHDL: Simulation \& Synthesis}}\\
+\vspace{0.2in}
+{\Large{Midterm Project: 4-bit ALU Design and Implementation}} \\
+\vspace{0.2in}
+
+%%%Cover Page
+Katelyn Charbonneau\\
+Email: kc325844@wne.edu\\
+Date: 10/27/2017\\
+\end{center}
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{| >{\arraybackslash}m{4in} | >{\centering\arraybackslash}m{1in} | }
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  \textbf{Tasks} & \textbf{Grades} \\
+  \hline
+  &\\
+  Task 1. Design, test, and verify 4-bit ALU (50') & \\
+  &\\
+  \hline
+  &\\
+  Task 2. Program DE2-115 and demonstrate 4-bit ALU (10') & \\
+  &\\
+  \hline
+  &\\
+  Task 3. Display INPUT and OUTPUT decimal equivalent values on SSDs (20') & \\
+  &\\
+  \hline
+  &\\
+  Report (20') & \\
+  &\\
+  \hline
+    &\\
+  Bonus (10') & \\
+  &\\
+  \hline
+  \hline
+    &\\
+  \textbf{Total (100/110):} & \\
+  &\\
+  \hline
+%  4. & Design and implement programs that interface to hardware subsystems, under a real-time scheduler. & Projects\\
+%  \hline
+
+\end{tabular}
+%\caption{Project 2 Grading}
+%\label{table_p1}
+\end{table}
+
+%%% END of Cover Page
+\newpage
+
+\section{Objective} \label{sec:obj}
+The objectives of the project are to be familiar with behavioral architecture; be able
+to write a behavioral VHDL code to design a 4-bit arithmetic logic unit (ALU), write
+a testbench to verify the design, and implement the ALU on FPGA.
+
+\section{Design Procedure} \label{sec:desproc}
+While testing of this design was done using a 4-bit bus width, their sizes are really defined as generics.  Thus, there is a variable bus size.  As part of this project, a ripple carry adder (RCA) is needed.  A fixed 4-bit width RCA design was available and was edited to also allow for a variable bus width.  A block diagram for this is shown in %\ref{fig:rca}. 
+
+%\begin{figure}[H]
+%\begin{center}
+%\includegraphics[width=2in]{rca.png}
+%\caption{Top-level Block}
+%\label{fig:rca}
+%\end{center}
+%\end{figure}
+
+\section{Simulation Results} \label{simresults}
+simulation results/screenshots and discussions...
+
+\section{Demonstration on FPGA} \label{demo}
+pictures of on board demo and discussions...
+ 
+\section{Conlusion} \label{cncl}
+your conclusion goes here...
+
+\end{document} 

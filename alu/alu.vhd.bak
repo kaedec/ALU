@@ -1,0 +1,25 @@
+--Library Declarations
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+------------------------------------------------------
+
+------------------------------------------------------
+--Entity Declaration
+ENTITY alu IS
+	GENERIC(N: INTEGER := 4);
+	
+	PORT(Abus, Bbus: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+		  FBus: IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+		  CBin: IN STD_LOGIC;
+		  Cbus: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+			: OUT);
+END alu;
+------------------------------------------------------
+
+------------------------------------------------------
+--Architecture
+ARCHITECTURE alu_arch OF alu_ IS
+BEGIN
+
+END alu_arch;
