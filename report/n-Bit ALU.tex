@@ -89,7 +89,7 @@ to write a behavioral VHDL code to design a 4-bit arithmetic logic unit (ALU), w
 a testbench to verify the design, and implement the ALU on FPGA.
 
 \section{Design Procedure} \label{sec:desproc}
-While testing of this design was done using a 4-bit bus width, their sizes are really defined as generics.  Thus, there is a variable bus size.  As part of this project, a ripple carry adder (RCA) is needed.  A fixed 4-bit width RCA design was available and was edited to also allow for a variable bus width.  A block diagram for this is shown in %\ref{fig:rca}. 
+While testing of this design was done using a 4-bit bus width, their sizes are really defined as generics.  Thus, there is a variable bus size.  As part of this project, a ripple carry adder (RCA) is needed.  A fixed 4-bit width RCA design was available and was edited to also allow for a variable bus width.  This design was tested using a 6-bit width; sample results are in Section \ref{simresults}.	A block diagram for this is shown in %\ref{fig:rca}.
 
 %\begin{figure}[H]
 %\begin{center}
@@ -100,7 +100,13 @@ While testing of this design was done using a 4-bit bus width, their sizes are r
 %\end{figure}
 
 \section{Simulation Results} \label{simresults}
-simulation results/screenshots and discussions...
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.7]{rca_sim_results_example.png}
+\caption{A few example operations on the RCA design using 6 bits}
+\label{fig:simrca0}
+\end{center}
+\end{figure}
 
 \section{Demonstration on FPGA} \label{demo}
 pictures of on board demo and discussions...

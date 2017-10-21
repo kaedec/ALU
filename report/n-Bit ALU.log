@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.9.21)  21 OCT 2017 14:17
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.9.21)  21 OCT 2017 15:18
 entering extended mode
 **"./n-Bit ALU.tex"
 ("n-Bit ALU.tex"
@@ -206,15 +206,17 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 45.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-] [2]
-("n-Bit ALU.aux") ) 
+]
+File: rca_sim_results_example.png Graphic file (type QTm)
+
+<use  "rca_sim_results_example.png" > [2] ("n-Bit ALU.aux") ) 
 Here is how much of TeX's memory you used:
- 2209 strings out of 427834
- 26399 string characters out of 3152470
+ 2216 strings out of 427834
+ 26495 string characters out of 3152470
  93617 words of memory out of 3000000
- 6161 multiletter control sequences out of 15000+200000
+ 6165 multiletter control sequences out of 15000+200000
  8317 words of font info for 36 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 32i,10n,24p,383b,288s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,10n,24p,487b,288s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on n-Bit*ALU.pdf (2 pages).
