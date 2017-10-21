@@ -61,7 +61,9 @@ END COMPONENT;
 BEGIN
 
 temp <= NOT B_BUS;
-B_BUS_Cmpl <= temp+1;
+
+B_BUS_Cmpl <= temp+1 WHEN CBin = '0' ELSE
+				  temp WHEN CBin = '1';
 
 --A_sevensegs: concurrent_ssd PORT MAP(A_BUS, A_SSD);
 --B_sevensegs: concurrent_ssd PORT MAP(B_BUS, B_SSD);
