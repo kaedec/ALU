@@ -2,9 +2,9 @@
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
-------------------------------------------------------
+-------------------------------------------------------------------------------
 
-------------------------------------------------------
+-------------------------------------------------------------------------------
 --Entity Declaration
 ENTITY alu IS
 	GENERIC(N: INTEGER := 4);
@@ -13,20 +13,34 @@ ENTITY alu IS
 		  CBin: IN STD_LOGIC;									 		--Carry/Borrow In
 		  C_BUS: OUT SIGNED(N-1 DOWNTO 0);		 					--Output
 		  CBout: OUT STD_LOGIC;								    		--Carry/Borrow Out
-		  A_SSD, B_SSD, C_SSD: OUT STD_LOGIC_VECTOR(0 TO 6);	--Hex Decimal Displays
-		  A_NEG, B_NEG, C_NEG: OUT STD_LOGIC_VECTOR(0 TO 6);	--Hex Negative Displays
+		  --A_SSD, B_SSD, C_SSD: OUT STD_LOGIC_VECTOR(0 TO 6);	--Hex Decimal Displays
+		  --A_NEG, B_NEG, C_NEG: OUT STD_LOGIC_VECTOR(0 TO 6);	--Hex Negative Displays
 		  OVERFLOW: OUT STD_LOGIC);									--Overflow
 END alu;
-------------------------------------------------------
+-------------------------------------------------------------------------------
 
-------------------------------------------------------
+-------------------------------------------------------------------------------
 --Architecture
 ARCHITECTURE alu_arch OF alu IS
 
+--DECLARATIONS
 CONSTANT N_USER: INTEGER := 4;
-------------------------------------------------------
+
+--Intermediary signals for Addition and Subtraction operations
+SIGNAL B_BUS_Cmpl, Sum_add, Sum_sub, Sum_subtemp, temp: SIGNED(N-1 DOWNTO 0);
+SIGNAL CBout_add, CBout_sub, OV_add, OV_sub: STD_LOGIC;
+SIGNAL CBin_sub: STD_LOGIC_VECTOR(0 TO 0);
+
+--Intermediary signals for logical shift left operation
+SIGNAL A_shift_bfore: SIGNED(N_USER-1 DOWNTO 0);
+SIGNAL A_shift_after: SIGNED(N_USER-1 DOWNTO 0);
+SIGNAL shift_ov_temp: STD_LOGIC_VECTOR(0 TO 1);
+SIGNAL shift_ov_test: STD_LOGIC;
+
+-------------------------------------------------------------------------------
 --Component Declarations
 --SSD display component
+
 COMPONENT concurrent_ssd 
 	PORT(S: IN UNSIGNED(3 DOWNTO 0);
 			F: OUT UNSIGNED(0 TO 6));
@@ -40,17 +54,53 @@ COMPONENT scalable_rca
 			S: OUT SIGNED(N-1 DOWNTO 0);
 			Clast, OV: OUT STD_LOGIC);
 END COMPONENT;
-------------------------------------------------------
+
+-------------------------------------------------------------------------------
+--BEHAVIOR
+
 BEGIN
 
-A_sevensegs: concurrent_ssd PORT MAP(A_BUS, A_SSD);
-B_sevensegs: concurrent_ssd PORT MAP(B_BUS, B_SSD);
-C_sevensegs: concurrent_ssd PORT MAP(C_BUS_Signal, C_SSD);
+temp <= NOT B_BUS;
+B_BUS_Cmpl <= temp+1;
 
-Addition: scalable_rca GENERIC MAP(N_USER) PORT MAP (A_BUS, B_BUS, CBin
+--A_sevensegs: concurrent_ssd PORT MAP(A_BUS, A_SSD);
+--B_sevensegs: concurrent_ssd PORT MAP(B_BUS, B_SSD);
+--C_sevensegs: concurrent_ssd PORT MAP(C_BUS_Signal, C_SSD);
+
+Addition: scalable_rca GENERIC MAP(N_USER) PORT MAP (A_BUS, B_BUS, CBin, Sum_add, CBout_add, OV_add);
+Subtract: scalable_rca GENERIC MAP(N_USER) PORT MAP (A_BUS, B_BUS_Cmpl, '0', Sum_subtemp, CBout_sub, OV_sub);
+--CBin_sub(0) <= CBin;
+Sum_sub <= Sum_subtemp;-- - SIGNED(CBin_sub);
+
+A_shift_bfore <= A_BUS;
+shift_ov_temp(0) <= A_shift_bfore(N_USER-1);
+A_shift_after <= A_BUS SLL 2;
+shift_ov_temp(1) <= A_shift_after(N_USER-1);
+shift_ov_test <= shift_ov_temp(0) XOR shift_ov_temp(1);
 
 --C_BUS assignment
 WITH F_BUS SELECT
 	C_BUS <= A_BUS WHEN "000",
-			<= A_BUS + B_BUS WHEN "001",
+				Sum_add WHEN "001",
+				Sum_sub WHEN "010",
+				A_BUS OR B_BUS WHEN "011",
+				A_BUS XOR B_BUS WHEN "100",
+				SHIFT_RIGHT(A_BUS, 3) WHEN "101",
+				A_BUS SLL 2 WHEN "110",
+				A_BUS ROL 3 WHEN "111",
+				UNAFFECTED WHEN OTHERS;
+
+--CBout assignment			
+WITH F_BUS SELECT
+	CBout <= CBout_add WHEN "001",
+				CBout_sub WHEN "010",
+				A_BUS(N_USER-1) WHEN "110",
+				CBin WHEN OTHERS;
+				
+--OVERFLOW assignment
+WITH F_BUS SELECT
+	OVERFLOW <= OV_add WHEN "001",
+					OV_sub WHEN "010",
+					shift_ov_test WHEN "110",
+					'0' WHEN OTHERS;
 END alu_arch;

@@ -1,0 +1,398 @@
+m255
+K3
+13
+cModel Technology
+dF:\New Schoolwork\Fall 2017\VHDL\Scalable_RCA
+Ealu
+Z0 w1508620574
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dF:\New Schoolwork\Fall 2017\VHDL\ALU\alu
+Z5 8F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu.vhd
+Z6 FF:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu.vhd
+l0
+L9
+V_j1O?M]^2A]9d];MN>NY?1
+Z7 OV;C;10.1d;51
+32
+Z8 !s108 1508621267.699000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu.vhd|
+Z10 !s107 F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu.vhd|
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+!s100 @lgQmJ_?TaJ5<H`jmdJLH2
+!i10b 1
+Aalu_arch
+R1
+R2
+R3
+DEx4 work 3 alu 0 22 _j1O?M]^2A]9d];MN>NY?1
+l61
+L24
+VP56T6@kd8LOd_SZj`>5IF1
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!s100 1LiT1@939eM4l:eVOif=X1
+!i10b 1
+Ealu_tb
+Z13 w1508619374
+R1
+R2
+R3
+R4
+Z14 8F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu_tb.vhd
+Z15 FF:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu_tb.vhd
+l0
+L5
+V1:jWU4??>E;jjJQ4[7JQ[3
+R7
+32
+Z16 !s108 1508621268.151000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu_tb.vhd|
+Z18 !s107 F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu_tb.vhd|
+R11
+R12
+!s100 :gPUbhd@g;aS]OP_=43kd3
+!i10b 1
+Aalu_tb_arch
+R1
+R2
+R3
+DEx4 work 6 alu_tb 0 22 1:jWU4??>E;jjJQ4[7JQ[3
+l28
+L8
+Vde0PYXD_j:RJH3jGMjMTj2
+R7
+32
+R16
+R17
+R18
+R11
+R12
+!s100 d>5d:b1hUUKE29[_6NnGN0
+!i10b 1
+Eand_gate
+Z19 w1504879754
+R2
+R3
+R4
+Z20 8F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/and_gate.vhd
+Z21 FF:/New Schoolwork/Fall 2017/VHDL/ALU/alu/and_gate.vhd
+l0
+L4
+VHV3UzgA[X7zcMX^3TFVl:0
+R7
+32
+Z22 !s108 1508621268.583000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/and_gate.vhd|
+Z24 !s107 F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/and_gate.vhd|
+R11
+R12
+!s100 EDjk@3VBNh9z]OkQ@SS;B1
+!i10b 1
+Aand_gate_arch
+R2
+R3
+DEx4 work 8 and_gate 0 22 HV3UzgA[X7zcMX^3TFVl:0
+l11
+L10
+V<mo9_22N5_G80hFcY3Ti_1
+R7
+32
+R22
+R23
+R24
+R11
+R12
+!s100 PIg=;TD1DnieOHTfY`a=N0
+!i10b 1
+Econcurrent_ssd
+Z25 w1508506800
+R1
+R2
+R3
+R4
+Z26 8F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/concurrent_ssd.vhd
+Z27 FF:/New Schoolwork/Fall 2017/VHDL/ALU/alu/concurrent_ssd.vhd
+l0
+L5
+VA;>KW:Jk<ZY;LTe3N=NO80
+R7
+32
+Z28 !s108 1508621269.010000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/concurrent_ssd.vhd|
+Z30 !s107 F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/concurrent_ssd.vhd|
+R11
+R12
+!s100 lPKjF;]GMX?h09jQa8@eF2
+!i10b 1
+Aconcurrent_ssd_arch
+R1
+R2
+R3
+DEx4 work 14 concurrent_ssd 0 22 A;>KW:Jk<ZY;LTe3N=NO80
+l13
+L11
+VBgjI6Y326O6`ElW>mzZRZ3
+R7
+32
+R28
+R29
+R30
+R11
+R12
+!s100 DIUU[lT81M_0IFBcen?Mj1
+!i10b 1
+Efull_adder
+Z31 w1505756470
+R2
+R3
+R4
+Z32 8F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/full_adder.vhd
+Z33 FF:/New Schoolwork/Fall 2017/VHDL/ALU/alu/full_adder.vhd
+l0
+L4
+V_KGJ4jJQO8VfIfK^zCde31
+R7
+32
+Z34 !s108 1508621269.432000
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/full_adder.vhd|
+Z36 !s107 F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/full_adder.vhd|
+R11
+R12
+!s100 VF2GTWTE0MhFJ5^b9h:XV3
+!i10b 1
+Afull_adder_arch
+R2
+R3
+DEx4 work 10 full_adder 0 22 _KGJ4jJQO8VfIfK^zCde31
+l22
+L11
+VznhdlfPo1;>h7U=1fcUdM0
+R7
+32
+R34
+R35
+R36
+R11
+R12
+!s100 _LC]Y4J_8J1ATc@WdB=dd0
+!i10b 1
+Einverter
+Z37 w1504880450
+R2
+R3
+R4
+Z38 8F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/inverter.vhd
+Z39 FF:/New Schoolwork/Fall 2017/VHDL/ALU/alu/inverter.vhd
+l0
+L4
+V89fKi8I=6]@<6b2oa]n6T2
+R7
+32
+Z40 !s108 1508621269.861000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/inverter.vhd|
+Z42 !s107 F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/inverter.vhd|
+R11
+R12
+!s100 gTJ7XDU_`I^A88GiN<oV20
+!i10b 1
+Ainverter_arch
+R2
+R3
+DEx4 work 8 inverter 0 22 89fKi8I=6]@<6b2oa]n6T2
+l11
+L10
+VkXESQkieS::zPonKb_X7S1
+R7
+32
+R40
+R41
+R42
+R11
+R12
+!s100 G[CTae<O<>FRSNQk_LRej2
+!i10b 1
+Eor_gate
+Z43 w1504880066
+R2
+R3
+R4
+Z44 8F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/or_gate.vhd
+Z45 FF:/New Schoolwork/Fall 2017/VHDL/ALU/alu/or_gate.vhd
+l0
+L4
+V@d<XegY]do@hG;NANVIPj0
+R7
+32
+Z46 !s108 1508621270.298000
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/or_gate.vhd|
+Z48 !s107 F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/or_gate.vhd|
+R11
+R12
+!s100 7j28RYZANgMPnZJNPmbmi2
+!i10b 1
+Aor_gate_arch
+R2
+R3
+DEx4 work 7 or_gate 0 22 @d<XegY]do@hG;NANVIPj0
+l11
+L10
+ViOA6Oz7iP^50Y2gYabmVk0
+R7
+32
+R46
+R47
+R48
+R11
+R12
+!s100 W_KadKTbj2XOmFCHGFPnk3
+!i10b 1
+Eor_gate_3i
+Z49 w1505745698
+R2
+R3
+R4
+Z50 8F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/or_gate_3i.vhd
+Z51 FF:/New Schoolwork/Fall 2017/VHDL/ALU/alu/or_gate_3i.vhd
+l0
+L4
+V^nNA99BC8gGSDCOTckR]Q3
+R7
+32
+Z52 !s108 1508621270.728000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/or_gate_3i.vhd|
+Z54 !s107 F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/or_gate_3i.vhd|
+R11
+R12
+!s100 F8CdJJLCmimLTDiVmn<0I2
+!i10b 1
+Aor_gate_3i_arch
+R2
+R3
+DEx4 work 10 or_gate_3i 0 22 ^nNA99BC8gGSDCOTckR]Q3
+l11
+L10
+V21Ki@BOW@o7UWo8:RTFJz2
+R7
+32
+R52
+R53
+R54
+R11
+R12
+!s100 GK^^bVdKSVY9ZHHoODFBF1
+!i10b 1
+Escalable_rca
+Z55 w1508508998
+R1
+R2
+R3
+R4
+Z56 8F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/scalable_rca.vhd
+Z57 FF:/New Schoolwork/Fall 2017/VHDL/ALU/alu/scalable_rca.vhd
+l0
+L5
+VcOTF[`FRV]LFD675JVA5z3
+R7
+32
+Z58 !s108 1508621271.167000
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/scalable_rca.vhd|
+Z60 !s107 F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/scalable_rca.vhd|
+R11
+R12
+!s100 jf^2IHP[bc^TadzcY1>dI2
+!i10b 1
+Ascalable_rca_arch
+R1
+R2
+R3
+DEx4 work 12 scalable_rca 0 22 cOTF[`FRV]LFD675JVA5z3
+l39
+L13
+VFgME4FLzHJ;aIAeRW:gd_2
+R7
+32
+R58
+R59
+R60
+R11
+R12
+!s100 S4?Om2POO3mg^M6j]k4nC1
+!i10b 1
+Exor_gate_3i
+Z61 w1505745570
+R2
+R3
+R4
+Z62 8F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_gate_3i.vhd
+Z63 FF:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_gate_3i.vhd
+l0
+L4
+VPMU8K;Y_Xahg:V;HJ1o020
+R7
+32
+Z64 !s108 1508621271.615000
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_gate_3i.vhd|
+Z66 !s107 F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_gate_3i.vhd|
+R11
+R12
+!s100 Z??U1:MClm4YbESm3Czk63
+!i10b 1
+Axor_gate_3i_arch
+R2
+R3
+DEx4 work 11 xor_gate_3i 0 22 PMU8K;Y_Xahg:V;HJ1o020
+l11
+L10
+V^mKC2HdCC56YKa]XZg5^k3
+!s100 90AD>2_Y^2h5D3]Kn^^fi3
+R7
+32
+R64
+R65
+R66
+R11
+R12
+!i10b 1
+Exor_struct
+Z67 w1505486950
+R2
+R3
+R4
+Z68 8F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_struct.vhd
+Z69 FF:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_struct.vhd
+l0
+L4
+V6=KZQM1[Ba;^MF]G8Uh[b2
+!s100 dG=6h`2z[<olTM^Q:ke3H1
+R7
+32
+!i10b 1
+Z70 !s108 1508621272.028000
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_struct.vhd|
+Z72 !s107 F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_struct.vhd|
+R11
+R12
+Axor_struct_arch
+R2
+R3
+Z73 DEx4 work 10 xor_struct 0 22 6=KZQM1[Ba;^MF]G8Uh[b2
+l32
+L10
+Z74 V>;I1R]=jGL:@QNL[AgSNG2
+Z75 !s100 iHXQne[J?n?n]H1M3BhTi3
+R7
+32
+!i10b 1
+R70
+R71
+R72
+R11
+R12
