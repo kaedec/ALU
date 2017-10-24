@@ -1,0 +1,213 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "C_BUS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "C_BUS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "C_BUS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "C_BUS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CBout",
+					"strict" : false
+				},
+				{
+					"name" : "A_SSD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "A_SSD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "A_SSD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "A_SSD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A_SSD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A_SSD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A_SSD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B_SSD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "B_SSD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "B_SSD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "B_SSD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B_SSD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B_SSD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B_SSD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "C_SSD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "C_SSD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "C_SSD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "C_SSD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "C_SSD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "C_SSD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "C_SSD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A_NEG[6]",
+					"strict" : false
+				},
+				{
+					"name" : "B_NEG[6]",
+					"strict" : false
+				},
+				{
+					"name" : "C_NEG[6]",
+					"strict" : false
+				},
+				{
+					"name" : "OV_SEG[5]",
+					"strict" : false
+				},
+				{
+					"name" : "OV_SEG[4]",
+					"strict" : false
+				},
+				{
+					"name" : "OV_SEG[3]",
+					"strict" : false
+				},
+				{
+					"name" : "OV_SEG[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CBout_SEG[5]",
+					"strict" : false
+				},
+				{
+					"name" : "CBout_SEG[4]",
+					"strict" : false
+				},
+				{
+					"name" : "CBout_SEG[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CBout_SEG[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CBin_LED",
+					"strict" : false
+				},
+				{
+					"name" : "OVERFLOW",
+					"strict" : false
+				},
+				{
+					"name" : "A_BUS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A_BUS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B_BUS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "F_BUS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "F_BUS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "CBin",
+					"strict" : false
+				},
+				{
+					"name" : "F_BUS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A_BUS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A_BUS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B_BUS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B_BUS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B_BUS[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

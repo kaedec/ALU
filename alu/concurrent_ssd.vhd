@@ -4,8 +4,8 @@ USE IEEE.NUMERIC_STD.ALL;
 
 ENTITY concurrent_ssd IS
 
-	PORT(S: IN UNSIGNED(3 DOWNTO 0);
-			F: OUT UNSIGNED(0 TO 6));
+	PORT(S: IN SIGNED(3 DOWNTO 0);
+			F: OUT STD_LOGIC_VECTOR(0 TO 6));
 END concurrent_ssd;
 
 ARCHITECTURE concurrent_ssd_arch OF concurrent_ssd IS
@@ -13,7 +13,8 @@ ARCHITECTURE concurrent_ssd_arch OF concurrent_ssd IS
 BEGIN
 
 WITH S SELECT
-	F <= "1001111" when "0001", -- 1
+	F <= "0000001" when "0000", -- 0
+		  "1001111" when "0001", -- 1
 		  "0010010" when "0010", -- 2
 		  "0000110" when "0011", -- 3
 		  "1001100" when "0100", -- 4
