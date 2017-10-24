@@ -7,6 +7,7 @@
 \usepackage{enumitem}
 \usepackage{indentfirst}
 \usepackage{boldline}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \usepackage{amsmath}
 
 %%% Use these when running Text Verifications
@@ -72,12 +73,9 @@ Date: 10/27/2017\\
   \textbf{Total (100/110):} & \\
   &\\
   \hline
-%  4. & Design and implement programs that interface to hardware subsystems, under a real-time scheduler. & Projects\\
-%  \hline
 
 \end{tabular}
-%\caption{Project 2 Grading}
-%\label{table_p1}
+\label{table_cover}
 \end{table}
 
 %%% END of Cover Page
@@ -89,15 +87,46 @@ to write a behavioral VHDL code to design a 4-bit arithmetic logic unit (ALU), w
 a testbench to verify the design, and implement the ALU on FPGA.
 
 \section{Design Procedure} \label{sec:desproc}
-While testing of this design was done using a 4-bit bus width, their sizes are really defined as generics.  Thus, there is a variable bus size.  As part of this project, a ripple carry adder (RCA) is needed.  A fixed 4-bit width RCA design was available and was edited to also allow for a variable bus width.  This design was tested using a 6-bit width; sample results are in Section \ref{simresults}.	A block diagram for this is shown in %\ref{fig:rca}.
+While testing of this design was done using a 4-bit bus width, their sizes are really defined as generics.  Thus, there is a variable bus size.  As part of this project, a ripple carry adder (RCA) is needed.  A fixed 4-bit width RCA design was available and was edited to also allow for a variable bus width.  This design was tested using a 6-bit width; sample results are in Section \ref{simresults}.	A block diagram for this is shown in Figure \ref{fig:rca}.
 
-%\begin{figure}[H]
-%\begin{center}
-%\includegraphics[width=2in]{rca.png}
-%\caption{Top-level Block}
-%\label{fig:rca}
-%\end{center}
-%\end{figure}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{Scalable_rca.png}
+\caption{The RCA used to perform arithmetic calculations}
+\label{fig:rca}
+\end{center}
+\end{figure}
+
+Where N is the bus width, A, B, and S (sum) are vectors of length N-1, C (carry) is a vector of length N, and OV is defined as C(N) $\oplus$ C(N-1).
+
+\newpage
+
+The operations that the ALU can perform, as listed in the project requirements, are listed below:
+
+\begin{table}[!h]
+\vspace{0.1in}
+\centering
+	\rowcolors{2}{gray!10}{white}
+	\begin{tabular}{ c  c  c  c} %\cline{2-7}
+	\hlineB{4}
+	\rowcolor{gray!25}
+	\textbf{F\textunderscore BUS} & \textbf{C\textunderscore BUS} & \textbf{CBout} & OVERFLOW\\\hlineB{4}
+	000 & A\textunderscore BUS & PASS & 0\\\hline
+	001 & A\textunderscore BUS + B\textunderscore BUS + CBin & CBout & Overflow \\\hline
+	010 & A\textunderscore BUS - B\textunderscore BUS - CBin & CBout & Overflow\\\hline
+	011 & A\textunderscore BUS OR B\textunderscore BUS & PASS & 0\\\hline
+	100 & A\textunderscore BUS XOR B\textunderscore BUS & PASS & 0\\\hline
+	101 & A\textunderscore SRA 3 & PASS & 0\\\hline
+	110 & A\textunderscore BUS SLL 3 & A\textunderscore BUS(N-1) & Overflow\\\hline
+	111 & A\textunderscore BUS ROR -3 & PASS & 0\\\hlineB{4}
+	\end{tabular}
+\label{tab:results1}
+\caption{ALU Operations}
+\end{table}
+
+The RCA is used in cases 1 and 2 - addition and subtraction.  All other cases are handled by simple pre-defined operations within VHDL.  Note that there is overflow for case 6 if the value of A\textunderscore Bus(N-1) changes after shifting.
+
+\newpage
 
 \section{Simulation Results} \label{simresults}
 \begin{figure}[H]

@@ -1,83 +1,124 @@
-Analysis & Synthesis report for alu
-Sat Oct 21 18:16:57 2017
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Analysis & Elaboration report for alu
+Tue Oct 24 15:53:28 2017
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for User Entity Instance: Top-level Entity: |alu
- 11. Parameter Settings for User Entity Instance: scalable_rca:Addition
- 12. Parameter Settings for User Entity Instance: scalable_rca:Subtract
- 13. Port Connectivity Checks: "scalable_rca:Subtract"
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |alu
+  5. Parameter Settings for User Entity Instance: scalable_rca:Addition
+  6. Parameter Settings for User Entity Instance: scalable_rca:Subtract
+  7. Analysis & Elaboration Settings
+  8. Port Connectivity Checks: "scalable_rca:Subtract"
+  9. Analysis & Elaboration Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2013 Altera Corporation
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, Altera MegaCore Function License 
-Agreement, or other applicable license agreement, including, 
-without limitation, that your use is for the sole purpose of 
-programming logic devices manufactured by Altera and sold by 
-Altera or its authorized distributors.  Please refer to the 
-applicable agreement for further details.
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Oct 21 18:16:57 2017           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; alu                                             ;
-; Top-level Entity Name              ; alu                                             ;
-; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 48                                              ;
-;     Total combinational functions  ; 48                                              ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 18                                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
-+------------------------------------+-------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                   ;
++------------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status      ; Successful - Tue Oct 24 15:53:28 2017       ;
+; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                      ; alu                                         ;
+; Top-level Entity Name              ; alu                                         ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |alu ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; N              ; 4     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: scalable_rca:Addition ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; n              ; 4     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: scalable_rca:Subtract ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; n              ; 4     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                        ;
+; Analysis & Elaboration Settings                                                                                      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
 ; Top-level entity name                                                      ; alu                ; alu                ;
-; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                                ; Off                ; Off                ;
 ; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
 ; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
 ; Preserve fewer node names                                                  ; On                 ; On                 ;
-; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
 ; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
 ; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                   ; Auto               ; Auto               ;
@@ -130,7 +171,7 @@ applicable agreement for further details.
 ; Report Connectivity Checks                                                 ; On                 ; On                 ;
 ; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
 ; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
-; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
 ; HDL message level                                                          ; Level2             ; Level2             ;
 ; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
 ; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
@@ -146,150 +187,7 @@ applicable agreement for further details.
 ; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
 ; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
 ; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
-; Synthesis Seed                                                             ; 1                  ; 1                  ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-
-
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                     ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                              ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
-; scalable_rca.vhd                 ; yes             ; User VHDL File  ; F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/scalable_rca.vhd ;         ;
-; xor_struct.vhd                   ; yes             ; User VHDL File  ; F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_struct.vhd   ;         ;
-; xor_gate_3i.vhd                  ; yes             ; User VHDL File  ; F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_gate_3i.vhd  ;         ;
-; or_gate_3i.vhd                   ; yes             ; User VHDL File  ; F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/or_gate_3i.vhd   ;         ;
-; or_gate.vhd                      ; yes             ; User VHDL File  ; F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/or_gate.vhd      ;         ;
-; inverter.vhd                     ; yes             ; User VHDL File  ; F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/inverter.vhd     ;         ;
-; full_adder.vhd                   ; yes             ; User VHDL File  ; F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/full_adder.vhd   ;         ;
-; and_gate.vhd                     ; yes             ; User VHDL File  ; F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/and_gate.vhd     ;         ;
-; alu.vhd                          ; yes             ; User VHDL File  ; F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu.vhd          ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
-
-
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 48             ;
-;                                             ;                ;
-; Total combinational functions               ; 48             ;
-; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 29             ;
-;     -- 3 input functions                    ; 14             ;
-;     -- <=2 input functions                  ; 5              ;
-;                                             ;                ;
-; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 48             ;
-;     -- arithmetic mode                      ; 0              ;
-;                                             ;                ;
-; Total registers                             ; 0              ;
-;     -- Dedicated logic registers            ; 0              ;
-;     -- I/O registers                        ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 18             ;
-; Embedded Multiplier 9-bit elements          ; 0              ;
-; Maximum fan-out node                        ; F_BUS[0]~input ;
-; Maximum fan-out                             ; 14             ;
-; Total fan-out                               ; 192            ;
-; Average fan-out                             ; 2.29           ;
-+---------------------------------------------+----------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                              ;
-+----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                ; Library Name ;
-+----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
-; |alu                             ; 48 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |alu                                                               ; work         ;
-;    |scalable_rca:Addition|       ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|scalable_rca:Addition                                         ; work         ;
-;       |full_adder:\genloop:0:Ui| ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|scalable_rca:Addition|full_adder:\genloop:0:Ui                ; work         ;
-;          |or_gate_3i:U4|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|scalable_rca:Addition|full_adder:\genloop:0:Ui|or_gate_3i:U4  ; work         ;
-;          |xor_gate_3i:U5|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|scalable_rca:Addition|full_adder:\genloop:0:Ui|xor_gate_3i:U5 ; work         ;
-;       |full_adder:\genloop:1:Ui| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|scalable_rca:Addition|full_adder:\genloop:1:Ui                ; work         ;
-;          |or_gate_3i:U4|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|scalable_rca:Addition|full_adder:\genloop:1:Ui|or_gate_3i:U4  ; work         ;
-;          |xor_gate_3i:U5|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|scalable_rca:Addition|full_adder:\genloop:1:Ui|xor_gate_3i:U5 ; work         ;
-;       |full_adder:\genloop:2:Ui| ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|scalable_rca:Addition|full_adder:\genloop:2:Ui                ; work         ;
-;          |or_gate_3i:U4|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|scalable_rca:Addition|full_adder:\genloop:2:Ui|or_gate_3i:U4  ; work         ;
-;       |full_adder:\genloop:3:Ui| ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|scalable_rca:Addition|full_adder:\genloop:3:Ui                ; work         ;
-;          |or_gate_3i:U4|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|scalable_rca:Addition|full_adder:\genloop:3:Ui|or_gate_3i:U4  ; work         ;
-;    |scalable_rca:Subtract|       ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|scalable_rca:Subtract                                         ; work         ;
-;       |full_adder:\genloop:1:Ui| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|scalable_rca:Subtract|full_adder:\genloop:1:Ui                ; work         ;
-;          |or_gate_3i:U4|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|scalable_rca:Subtract|full_adder:\genloop:1:Ui|or_gate_3i:U4  ; work         ;
-;          |xor_gate_3i:U5|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|scalable_rca:Subtract|full_adder:\genloop:1:Ui|xor_gate_3i:U5 ; work         ;
-;       |full_adder:\genloop:2:Ui| ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|scalable_rca:Subtract|full_adder:\genloop:2:Ui                ; work         ;
-;          |or_gate_3i:U4|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|scalable_rca:Subtract|full_adder:\genloop:2:Ui|or_gate_3i:U4  ; work         ;
-;       |full_adder:\genloop:3:Ui| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|scalable_rca:Subtract|full_adder:\genloop:3:Ui                ; work         ;
-;          |or_gate_3i:U4|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|scalable_rca:Subtract|full_adder:\genloop:3:Ui|or_gate_3i:U4  ; work         ;
-;          |xor_gate_3i:U5|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|scalable_rca:Subtract|full_adder:\genloop:3:Ui|xor_gate_3i:U5 ; work         ;
-+----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |alu|Mux3                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |alu ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; N              ; 4     ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: scalable_rca:Addition ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; n              ; 4     ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: scalable_rca:Subtract ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; n              ; 4     ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------+
@@ -301,81 +199,66 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+-------------------------+
 
 
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Oct 21 18:16:53 2017
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu -c alu
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Tue Oct 24 15:53:16 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu -c alu --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file scalable_rca.vhd
-    Info (12022): Found design unit 1: scalable_rca-scalable_rca_arch
-    Info (12023): Found entity 1: scalable_rca
+    Info (12022): Found design unit 1: scalable_rca-scalable_rca_arch File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/scalable_rca.vhd Line: 13
+    Info (12023): Found entity 1: scalable_rca File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/scalable_rca.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file xor_struct.vhd
-    Info (12022): Found design unit 1: xor_struct-xor_struct_arch
-    Info (12023): Found entity 1: xor_struct
+    Info (12022): Found design unit 1: xor_struct-xor_struct_arch File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_struct.vhd Line: 10
+    Info (12023): Found entity 1: xor_struct File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_struct.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file xor_gate_3i.vhd
-    Info (12022): Found design unit 1: xor_gate_3i-xor_gate_3i_arch
-    Info (12023): Found entity 1: xor_gate_3i
+    Info (12022): Found design unit 1: xor_gate_3i-xor_gate_3i_arch File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_gate_3i.vhd Line: 10
+    Info (12023): Found entity 1: xor_gate_3i File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_gate_3i.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file or_gate_3i.vhd
-    Info (12022): Found design unit 1: or_gate_3i-or_gate_3i_arch
-    Info (12023): Found entity 1: or_gate_3i
+    Info (12022): Found design unit 1: or_gate_3i-or_gate_3i_arch File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/or_gate_3i.vhd Line: 10
+    Info (12023): Found entity 1: or_gate_3i File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/or_gate_3i.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file or_gate.vhd
-    Info (12022): Found design unit 1: or_gate-or_gate_arch
-    Info (12023): Found entity 1: or_gate
+    Info (12022): Found design unit 1: or_gate-or_gate_arch File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/or_gate.vhd Line: 10
+    Info (12023): Found entity 1: or_gate File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/or_gate.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file inverter.vhd
-    Info (12022): Found design unit 1: inverter-inverter_arch
-    Info (12023): Found entity 1: inverter
+    Info (12022): Found design unit 1: inverter-inverter_arch File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/inverter.vhd Line: 10
+    Info (12023): Found entity 1: inverter File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/inverter.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file full_adder.vhd
-    Info (12022): Found design unit 1: full_adder-full_adder_arch
-    Info (12023): Found entity 1: full_adder
+    Info (12022): Found design unit 1: full_adder-full_adder_arch File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/full_adder.vhd Line: 11
+    Info (12023): Found entity 1: full_adder File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/full_adder.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file concurrent_ssd.vhd
-    Info (12022): Found design unit 1: concurrent_ssd-concurrent_ssd_arch
-    Info (12023): Found entity 1: concurrent_ssd
+    Info (12022): Found design unit 1: concurrent_ssd-concurrent_ssd_arch File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/concurrent_ssd.vhd Line: 11
+    Info (12023): Found entity 1: concurrent_ssd File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/concurrent_ssd.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file and_gate.vhd
-    Info (12022): Found design unit 1: and_gate-and_gate_arch
-    Info (12023): Found entity 1: and_gate
+    Info (12022): Found design unit 1: and_gate-and_gate_arch File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/and_gate.vhd Line: 10
+    Info (12023): Found entity 1: and_gate File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/and_gate.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
-    Info (12022): Found design unit 1: alu-alu_arch
-    Info (12023): Found entity 1: alu
+    Info (12022): Found design unit 1: alu-alu_arch File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu.vhd Line: 24
+    Info (12023): Found entity 1: alu File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file alu_tb.vhd
-    Info (12022): Found design unit 1: alu_tb-alu_tb_arch
-    Info (12023): Found entity 1: alu_tb
+    Info (12022): Found design unit 1: alu_tb-alu_tb_arch File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu_tb.vhd Line: 8
+    Info (12023): Found entity 1: alu_tb File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu_tb.vhd Line: 5
 Info (12127): Elaborating entity "alu" for the top level hierarchy
-Info (10041): Inferred latch for "B_BUS_Cmpl[0]" at alu.vhd(65)
-Info (10041): Inferred latch for "B_BUS_Cmpl[1]" at alu.vhd(65)
-Info (10041): Inferred latch for "B_BUS_Cmpl[2]" at alu.vhd(65)
-Info (10041): Inferred latch for "B_BUS_Cmpl[3]" at alu.vhd(65)
-Info (12128): Elaborating entity "scalable_rca" for hierarchy "scalable_rca:Addition"
-Info (12128): Elaborating entity "full_adder" for hierarchy "scalable_rca:Addition|full_adder:\genloop:0:Ui"
-Info (12128): Elaborating entity "and_gate" for hierarchy "scalable_rca:Addition|full_adder:\genloop:0:Ui|and_gate:U1"
-Info (12128): Elaborating entity "or_gate_3i" for hierarchy "scalable_rca:Addition|full_adder:\genloop:0:Ui|or_gate_3i:U4"
-Info (12128): Elaborating entity "xor_gate_3i" for hierarchy "scalable_rca:Addition|full_adder:\genloop:0:Ui|xor_gate_3i:U5"
-Info (12128): Elaborating entity "xor_struct" for hierarchy "scalable_rca:Addition|xor_struct:U5"
-Info (12128): Elaborating entity "inverter" for hierarchy "scalable_rca:Addition|xor_struct:U5|inverter:U1"
-Info (12128): Elaborating entity "or_gate" for hierarchy "scalable_rca:Addition|xor_struct:U5|or_gate:U5"
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 66 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 48 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 526 megabytes
-    Info: Processing ended: Sat Oct 21 18:16:58 2017
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:02
+Info (10041): Inferred latch for "B_BUS_Cmpl[0]" at alu.vhd(65) File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu.vhd Line: 65
+Info (10041): Inferred latch for "B_BUS_Cmpl[1]" at alu.vhd(65) File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu.vhd Line: 65
+Info (10041): Inferred latch for "B_BUS_Cmpl[2]" at alu.vhd(65) File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu.vhd Line: 65
+Info (10041): Inferred latch for "B_BUS_Cmpl[3]" at alu.vhd(65) File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu.vhd Line: 65
+Info (12128): Elaborating entity "scalable_rca" for hierarchy "scalable_rca:Addition" File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu.vhd Line: 72
+Info (12128): Elaborating entity "full_adder" for hierarchy "scalable_rca:Addition|full_adder:\genloop:0:Ui" File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/scalable_rca.vhd Line: 44
+Info (12128): Elaborating entity "and_gate" for hierarchy "scalable_rca:Addition|full_adder:\genloop:0:Ui|and_gate:U1" File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/full_adder.vhd Line: 27
+Info (12128): Elaborating entity "or_gate_3i" for hierarchy "scalable_rca:Addition|full_adder:\genloop:0:Ui|or_gate_3i:U4" File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/full_adder.vhd Line: 30
+Info (12128): Elaborating entity "xor_gate_3i" for hierarchy "scalable_rca:Addition|full_adder:\genloop:0:Ui|xor_gate_3i:U5" File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/full_adder.vhd Line: 31
+Info (12128): Elaborating entity "xor_struct" for hierarchy "scalable_rca:Addition|xor_struct:U5" File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/scalable_rca.vhd Line: 47
+Info (12128): Elaborating entity "inverter" for hierarchy "scalable_rca:Addition|xor_struct:U5|inverter:U1" File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_struct.vhd Line: 36
+Info (12128): Elaborating entity "or_gate" for hierarchy "scalable_rca:Addition|xor_struct:U5|or_gate:U5" File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_struct.vhd Line: 40
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 667 megabytes
+    Info: Processing ended: Tue Oct 24 15:53:28 2017
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:21
 
 
