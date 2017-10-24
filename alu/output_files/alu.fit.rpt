@@ -1,5 +1,5 @@
 Fitter report for alu
-Tue Oct 24 17:39:31 2017
+Tue Oct 24 18:57:45 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Tue Oct 24 17:39:31 2017       ;
+; Fitter Status                      ; Successful - Tue Oct 24 18:57:45 2017       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; alu                                         ;
 ; Top-level Entity Name              ; alu                                         ;
@@ -155,7 +155,7 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.1%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -211,8 +211,8 @@ The pin-out file can be found in F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/output
 ;     -- Combinational with a register        ; 0                      ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 49                     ;
-;     -- 3 input functions                    ; 16                     ;
+;     -- 4 input functions                    ; 43                     ;
+;     -- 3 input functions                    ; 22                     ;
 ;     -- <=2 input functions                  ; 4                      ;
 ;     -- Register only                        ; 0                      ;
 ;                                             ;                        ;
@@ -243,11 +243,11 @@ The pin-out file can be found in F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/output
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.1%     ;
-; Peak interconnect usage (total/H/V)         ; 0.9% / 0.9% / 1.2%     ;
-; Maximum fan-out                             ; 19                     ;
-; Highest non-global fan-out                  ; 19                     ;
-; Total fan-out                               ; 371                    ;
-; Average fan-out                             ; 1.62                   ;
+; Peak interconnect usage (total/H/V)         ; 1.2% / 1.1% / 1.4%     ;
+; Maximum fan-out                             ; 17                     ;
+; Highest non-global fan-out                  ; 17                     ;
+; Total fan-out                               ; 365                    ;
+; Average fan-out                             ; 1.59                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -266,8 +266,8 @@ The pin-out file can be found in F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/output
 ;     -- Combinational with a register        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 49                    ; 0                              ;
-;     -- 3 input functions                    ; 16                    ; 0                              ;
+;     -- 4 input functions                    ; 43                    ; 0                              ;
+;     -- 3 input functions                    ; 22                    ; 0                              ;
 ;     -- <=2 input functions                  ; 4                     ; 0                              ;
 ;     -- Register only                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
@@ -294,7 +294,7 @@ The pin-out file can be found in F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/output
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 366                   ; 5                              ;
+;     -- Total Connections                    ; 360                   ; 5                              ;
 ;     -- Registered Connections               ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
@@ -330,11 +330,11 @@ The pin-out file can be found in F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/output
 ; A_BUS[0] ; AB28  ; 5        ; 115          ; 17           ; 0            ; 15                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; A_BUS[1] ; AC28  ; 5        ; 115          ; 14           ; 0            ; 16                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; A_BUS[2] ; AC27  ; 5        ; 115          ; 15           ; 7            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; A_BUS[3] ; AD27  ; 5        ; 115          ; 13           ; 7            ; 19                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; A_BUS[3] ; AD27  ; 5        ; 115          ; 13           ; 7            ; 17                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; B_BUS[0] ; AC26  ; 5        ; 115          ; 11           ; 7            ; 15                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; B_BUS[1] ; AD26  ; 5        ; 115          ; 10           ; 0            ; 14                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; B_BUS[2] ; AB26  ; 5        ; 115          ; 15           ; 0            ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; B_BUS[3] ; AC25  ; 5        ; 115          ; 4            ; 21           ; 14                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; B_BUS[3] ; AC25  ; 5        ; 115          ; 4            ; 21           ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; CBin     ; Y23   ; 5        ; 115          ; 14           ; 7            ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; F_BUS[0] ; AA24  ; 5        ; 115          ; 9            ; 21           ; 14                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; F_BUS[1] ; AA23  ; 5        ; 115          ; 10           ; 7            ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
@@ -1422,9 +1422,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CBout_SEG[0] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; CBin_LED     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; OVERFLOW     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; A_BUS[1]     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; A_BUS[1]     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; A_BUS[0]     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; B_BUS[0]     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; B_BUS[0]     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; F_BUS[0]     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; F_BUS[1]     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; CBin         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
@@ -1443,22 +1443,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                                                      ; Pad To Core Index ; Setting ;
 +--------------------------------------------------------------------------+-------------------+---------+
 ; A_BUS[1]                                                                 ;                   ;         ;
-;      - Mux3~6                                                            ; 1                 ; 6       ;
-;      - RESULT~1                                                          ; 1                 ; 6       ;
-;      - scalable_rca:Subtract|full_adder:\genloop:1:Ui|xor_gate_3i:U5|F   ; 1                 ; 6       ;
-;      - scalable_rca:Addition|full_adder:\genloop:1:Ui|xor_gate_3i:U5|F   ; 1                 ; 6       ;
-;      - Mux2~0                                                            ; 1                 ; 6       ;
-;      - scalable_rca:Subtract|full_adder:\genloop:1:Ui|or_gate_3i:U4|F~0  ; 1                 ; 6       ;
-;      - scalable_rca:Addition|full_adder:\genloop:1:Ui|or_gate_3i:U4|F~0  ; 1                 ; 6       ;
-;      - Mux3~8                                                            ; 1                 ; 6       ;
-;      - concurrent_ssd:A_sevensegs|Mux6~0                                 ; 1                 ; 6       ;
-;      - concurrent_ssd:A_sevensegs|Mux5~0                                 ; 1                 ; 6       ;
-;      - concurrent_ssd:A_sevensegs|Mux4~0                                 ; 1                 ; 6       ;
-;      - concurrent_ssd:A_sevensegs|Mux3~0                                 ; 1                 ; 6       ;
-;      - concurrent_ssd:A_sevensegs|Mux2~0                                 ; 1                 ; 6       ;
-;      - concurrent_ssd:A_sevensegs|Mux1~0                                 ; 1                 ; 6       ;
-;      - concurrent_ssd:A_sevensegs|Mux0~0                                 ; 1                 ; 6       ;
-;      - Mux5~2                                                            ; 1                 ; 6       ;
+;      - Mux3~6                                                            ; 0                 ; 6       ;
+;      - RESULT~1                                                          ; 0                 ; 6       ;
+;      - scalable_rca:Subtract|full_adder:\genloop:1:Ui|xor_gate_3i:U5|F   ; 0                 ; 6       ;
+;      - scalable_rca:Addition|full_adder:\genloop:1:Ui|xor_gate_3i:U5|F   ; 0                 ; 6       ;
+;      - Mux2~0                                                            ; 0                 ; 6       ;
+;      - scalable_rca:Subtract|full_adder:\genloop:1:Ui|or_gate_3i:U4|F~0  ; 0                 ; 6       ;
+;      - scalable_rca:Addition|full_adder:\genloop:1:Ui|or_gate_3i:U4|F~0  ; 0                 ; 6       ;
+;      - Mux3~8                                                            ; 0                 ; 6       ;
+;      - concurrent_ssd:A_sevensegs|Mux6~0                                 ; 0                 ; 6       ;
+;      - concurrent_ssd:A_sevensegs|Mux5~0                                 ; 0                 ; 6       ;
+;      - concurrent_ssd:A_sevensegs|Mux4~0                                 ; 0                 ; 6       ;
+;      - concurrent_ssd:A_sevensegs|Mux3~0                                 ; 0                 ; 6       ;
+;      - concurrent_ssd:A_sevensegs|Mux2~0                                 ; 0                 ; 6       ;
+;      - concurrent_ssd:A_sevensegs|Mux1~0                                 ; 0                 ; 6       ;
+;      - concurrent_ssd:A_sevensegs|Mux0~0                                 ; 0                 ; 6       ;
+;      - Mux5~2                                                            ; 0                 ; 6       ;
 ; A_BUS[0]                                                                 ;                   ;         ;
 ;      - RESULT~0                                                          ; 0                 ; 6       ;
 ;      - scalable_rca:Addition|full_adder:\genloop:0:Ui|xor_gate_3i:U5|F~0 ; 0                 ; 6       ;
@@ -1476,21 +1476,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - concurrent_ssd:A_sevensegs|Mux1~0                                 ; 0                 ; 6       ;
 ;      - concurrent_ssd:A_sevensegs|Mux0~0                                 ; 0                 ; 6       ;
 ; B_BUS[0]                                                                 ;                   ;         ;
-;      - RESULT~0                                                          ; 1                 ; 6       ;
-;      - scalable_rca:Addition|full_adder:\genloop:0:Ui|xor_gate_3i:U5|F~0 ; 1                 ; 6       ;
-;      - Mux3~1                                                            ; 1                 ; 6       ;
-;      - scalable_rca:Addition|full_adder:\genloop:0:Ui|xor_gate_3i:U5|F~1 ; 1                 ; 6       ;
-;      - B_BUS_Cmpl[1]~0                                                   ; 1                 ; 6       ;
-;      - scalable_rca:Addition|full_adder:\genloop:0:Ui|or_gate_3i:U4|F~0  ; 1                 ; 6       ;
-;      - B_BUS_Cmpl[2]~1                                                   ; 1                 ; 6       ;
-;      - Add0~0                                                            ; 1                 ; 6       ;
-;      - concurrent_ssd:B_sevensegs|Mux6~0                                 ; 1                 ; 6       ;
-;      - concurrent_ssd:B_sevensegs|Mux5~0                                 ; 1                 ; 6       ;
-;      - concurrent_ssd:B_sevensegs|Mux4~0                                 ; 1                 ; 6       ;
-;      - concurrent_ssd:B_sevensegs|Mux3~0                                 ; 1                 ; 6       ;
-;      - concurrent_ssd:B_sevensegs|Mux2~0                                 ; 1                 ; 6       ;
-;      - concurrent_ssd:B_sevensegs|Mux1~0                                 ; 1                 ; 6       ;
-;      - concurrent_ssd:B_sevensegs|Mux0~0                                 ; 1                 ; 6       ;
+;      - RESULT~0                                                          ; 0                 ; 6       ;
+;      - scalable_rca:Addition|full_adder:\genloop:0:Ui|xor_gate_3i:U5|F~0 ; 0                 ; 6       ;
+;      - Mux3~1                                                            ; 0                 ; 6       ;
+;      - scalable_rca:Addition|full_adder:\genloop:0:Ui|xor_gate_3i:U5|F~1 ; 0                 ; 6       ;
+;      - B_BUS_Cmpl[1]~0                                                   ; 0                 ; 6       ;
+;      - scalable_rca:Addition|full_adder:\genloop:0:Ui|or_gate_3i:U4|F~0  ; 0                 ; 6       ;
+;      - B_BUS_Cmpl[2]~1                                                   ; 0                 ; 6       ;
+;      - Add0~0                                                            ; 0                 ; 6       ;
+;      - concurrent_ssd:B_sevensegs|Mux6~0                                 ; 0                 ; 6       ;
+;      - concurrent_ssd:B_sevensegs|Mux5~0                                 ; 0                 ; 6       ;
+;      - concurrent_ssd:B_sevensegs|Mux4~0                                 ; 0                 ; 6       ;
+;      - concurrent_ssd:B_sevensegs|Mux3~0                                 ; 0                 ; 6       ;
+;      - concurrent_ssd:B_sevensegs|Mux2~0                                 ; 0                 ; 6       ;
+;      - concurrent_ssd:B_sevensegs|Mux1~0                                 ; 0                 ; 6       ;
+;      - concurrent_ssd:B_sevensegs|Mux0~0                                 ; 0                 ; 6       ;
 ; F_BUS[0]                                                                 ;                   ;         ;
 ;      - Mux3~0                                                            ; 1                 ; 6       ;
 ;      - Mux3~1                                                            ; 1                 ; 6       ;
@@ -1557,8 +1557,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - Mux4~1                                                            ; 0                 ; 6       ;
 ;      - concurrent_ssd:A_sevensegs|Mux6~0                                 ; 0                 ; 6       ;
 ;      - concurrent_ssd:A_sevensegs|Mux5~0                                 ; 0                 ; 6       ;
-;      - concurrent_ssd:A_sevensegs|Mux4~0                                 ; 0                 ; 6       ;
-;      - concurrent_ssd:A_sevensegs|Mux3~0                                 ; 0                 ; 6       ;
 ;      - concurrent_ssd:A_sevensegs|Mux2~0                                 ; 0                 ; 6       ;
 ;      - concurrent_ssd:A_sevensegs|Mux1~0                                 ; 0                 ; 6       ;
 ;      - concurrent_ssd:A_sevensegs|Mux0~0                                 ; 0                 ; 6       ;
@@ -1613,8 +1611,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - scalable_rca:Addition|full_adder:\genloop:3:Ui|or_gate_3i:U4|F~0  ; 0                 ; 6       ;
 ;      - concurrent_ssd:B_sevensegs|Mux6~0                                 ; 0                 ; 6       ;
 ;      - concurrent_ssd:B_sevensegs|Mux5~0                                 ; 0                 ; 6       ;
-;      - concurrent_ssd:B_sevensegs|Mux4~0                                 ; 0                 ; 6       ;
-;      - concurrent_ssd:B_sevensegs|Mux3~0                                 ; 0                 ; 6       ;
 ;      - concurrent_ssd:B_sevensegs|Mux2~0                                 ; 0                 ; 6       ;
 ;      - concurrent_ssd:B_sevensegs|Mux1~0                                 ; 0                 ; 6       ;
 ;      - concurrent_ssd:B_sevensegs|Mux0~0                                 ; 0                 ; 6       ;
@@ -1629,14 +1625,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 90 / 342,891 ( < 1 % )  ;
-; C16 interconnects     ; 27 / 10,120 ( < 1 % )   ;
-; C4 interconnects      ; 154 / 209,544 ( < 1 % ) ;
-; Direct links          ; 4 / 342,891 ( < 1 % )   ;
+; Block interconnects   ; 91 / 342,891 ( < 1 % )  ;
+; C16 interconnects     ; 30 / 10,120 ( < 1 % )   ;
+; C4 interconnects      ; 152 / 209,544 ( < 1 % ) ;
+; Direct links          ; 5 / 342,891 ( < 1 % )   ;
 ; Global clocks         ; 0 / 20 ( 0 % )          ;
-; Local interconnects   ; 31 / 119,088 ( < 1 % )  ;
-; R24 interconnects     ; 31 / 9,963 ( < 1 % )    ;
-; R4 interconnects      ; 114 / 289,782 ( < 1 % ) ;
+; Local interconnects   ; 32 / 119,088 ( < 1 % )  ;
+; R24 interconnects     ; 43 / 9,963 ( < 1 % )    ;
+; R4 interconnects      ; 102 / 289,782 ( < 1 % ) ;
 +-----------------------+-------------------------+
 
 
@@ -1692,13 +1688,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 7.40) ; Number of LABs  (Total = 5) ;
+; Number of Signals Sourced Out  (Average = 7.20) ; Number of LABs  (Total = 5) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
 ; 1                                               ; 0                           ;
-; 2                                               ; 1                           ;
-; 3                                               ; 0                           ;
-; 4                                               ; 1                           ;
+; 2                                               ; 0                           ;
+; 3                                               ; 2                           ;
+; 4                                               ; 0                           ;
 ; 5                                               ; 0                           ;
 ; 6                                               ; 0                           ;
 ; 7                                               ; 1                           ;
@@ -1707,15 +1703,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 10                                              ; 1                           ;
 ; 11                                              ; 0                           ;
 ; 12                                              ; 0                           ;
-; 13                                              ; 0                           ;
-; 14                                              ; 1                           ;
+; 13                                              ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 9.40) ; Number of LABs  (Total = 5) ;
+; Number of Distinct Inputs  (Average = 9.20) ; Number of LABs  (Total = 5) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
@@ -1724,13 +1719,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 4                                           ; 1                           ;
 ; 5                                           ; 0                           ;
 ; 6                                           ; 0                           ;
-; 7                                           ; 1                           ;
-; 8                                           ; 0                           ;
+; 7                                           ; 0                           ;
+; 8                                           ; 1                           ;
 ; 9                                           ; 0                           ;
 ; 10                                          ; 0                           ;
-; 11                                          ; 1                           ;
+; 11                                          ; 2                           ;
 ; 12                                          ; 1                           ;
-; 13                                          ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1946,7 +1940,7 @@ Info (332130): Timing requirements not specified -- quality metrics such as perf
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1955,7 +1949,7 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X104_Y0 to location X115_Y11
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X104_Y0 to location X115_Y11
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
@@ -1968,9 +1962,9 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/output_files/alu.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 1576 megabytes
-    Info: Processing ended: Tue Oct 24 17:39:33 2017
-    Info: Elapsed time: 00:00:15
+    Info: Peak virtual memory: 1584 megabytes
+    Info: Processing ended: Tue Oct 24 18:57:46 2017
+    Info: Elapsed time: 00:00:17
     Info: Total CPU time (on all processors): 00:00:13
 
 

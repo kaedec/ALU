@@ -18,6 +18,9 @@ COMPONENT alu
 		  CBout: OUT STD_LOGIC;								    		--Carry/Borrow Out
 		  A_SSD, B_SSD, C_SSD: OUT STD_LOGIC_VECTOR(0 TO 6);	--Hex Decimal Displays
 		  A_NEG, B_NEG, C_NEG: OUT STD_LOGIC_VECTOR(0 TO 6);	--Hex Negative Displays
+		  OV_SEG: OUT STD_LOGIC_VECTOR(0 TO 6);					--Hex Overflow Display
+		  CBout_SEG: OUT STD_LOGIC_VECTOR(0 TO 6);				--Hex Carry/Borrow Out
+		  CBin_LED: OUT STD_LOGIC;										--LED Carry/Borrow In
 		  OVERFLOW: OUT STD_LOGIC);									--Overflow
 END COMPONENT;
 
