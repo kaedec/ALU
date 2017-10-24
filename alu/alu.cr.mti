@@ -1,4 +1,12 @@
-{F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu.vhd} {1 {vcom -work work -2002 -explicit {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu.vhd}
+{F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/full_adder.vhd} {1 {vcom -work work -2002 -explicit {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/full_adder.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity full_adder
+-- Compiling architecture full_adder_arch of full_adder
+
+} {} {}} {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu.vhd} {1 {vcom -work work -2002 -explicit {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu.vhd}
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -7,13 +15,21 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity alu
 -- Compiling architecture alu_arch of alu
 
-} {} {}} {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/full_adder.vhd} {1 {vcom -work work -2002 -explicit {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/full_adder.vhd}
+} {} {}} {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/and_gate.vhd} {1 {vcom -work work -2002 -explicit {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/and_gate.vhd}
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity full_adder
--- Compiling architecture full_adder_arch of full_adder
+-- Compiling entity and_gate
+-- Compiling architecture and_gate_arch of and_gate
+
+} {} {}} {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/inverter.vhd} {1 {vcom -work work -2002 -explicit {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/inverter.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity inverter
+-- Compiling architecture inverter_arch of inverter
 
 } {} {}} {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu_tb.vhd} {2 {vcom -work work -2002 -explicit {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu_tb.vhd}
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -32,29 +48,22 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 ** Warning: [4] F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu_tb.vhd(50): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 ** Warning: [4] F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu_tb.vhd(52): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 
-} {} {}} {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/inverter.vhd} {1 {vcom -work work -2002 -explicit {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/inverter.vhd}
+} {} {}} {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/concurrent_ssd.vhd} {1 {vcom -work work -2002 -explicit {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/concurrent_ssd.vhd}
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity inverter
--- Compiling architecture inverter_arch of inverter
+-- Loading package NUMERIC_STD
+-- Compiling entity concurrent_ssd
+-- Compiling architecture concurrent_ssd_arch of concurrent_ssd
 
-} {} {}} {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/and_gate.vhd} {1 {vcom -work work -2002 -explicit {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/and_gate.vhd}
+} {} {}} {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/or_gate_3i.vhd} {1 {vcom -work work -2002 -explicit {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/or_gate_3i.vhd}
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity and_gate
--- Compiling architecture and_gate_arch of and_gate
-
-} {} {}} {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_gate_3i.vhd} {1 {vcom -work work -2002 -explicit {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_gate_3i.vhd}
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity xor_gate_3i
--- Compiling architecture xor_gate_3i_arch of xor_gate_3i
+-- Compiling entity or_gate_3i
+-- Compiling architecture or_gate_3i_arch of or_gate_3i
 
 } {} {}} {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/scalable_rca.vhd} {1 {vcom -work work -2002 -explicit {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/scalable_rca.vhd}
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -65,30 +74,13 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity scalable_rca
 -- Compiling architecture scalable_rca_arch of scalable_rca
 
-} {} {}} {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/or_gate_3i.vhd} {1 {vcom -work work -2002 -explicit {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/or_gate_3i.vhd}
+} {} {}} {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_gate_3i.vhd} {1 {vcom -work work -2002 -explicit {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_gate_3i.vhd}
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity or_gate_3i
--- Compiling architecture or_gate_3i_arch of or_gate_3i
-
-} {} {}} {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/concurrent_ssd.vhd} {1 {vcom -work work -2002 -explicit {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/concurrent_ssd.vhd}
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity concurrent_ssd
--- Compiling architecture concurrent_ssd_arch of concurrent_ssd
-
-} {} {}} {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_struct.vhd} {1 {vcom -work work -2002 -explicit {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_struct.vhd}
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity xor_struct
--- Compiling architecture xor_struct_arch of xor_struct
+-- Compiling entity xor_gate_3i
+-- Compiling architecture xor_gate_3i_arch of xor_gate_3i
 
 } {} {}} {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/or_gate.vhd} {1 {vcom -work work -2002 -explicit {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/or_gate.vhd}
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -97,5 +89,13 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package std_logic_1164
 -- Compiling entity or_gate
 -- Compiling architecture or_gate_arch of or_gate
+
+} {} {}} {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_struct.vhd} {1 {vcom -work work -2002 -explicit {F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/xor_struct.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity xor_struct
+-- Compiling architecture xor_struct_arch of xor_struct
 
 } {} {}}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.9.21)  21 OCT 2017 15:18
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.9.21)  24 OCT 2017 15:51
 entering extended mode
 **"./n-Bit ALU.tex"
 ("n-Bit ALU.tex"
@@ -117,9 +117,39 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 (C:\Users\Katelyn\AppData\Roaming\MiKTeX\2.9\tex\latex\shipunov\boldline.sty
 Package: boldline 2008/02/04 v0.2 Adjust line width in tables
 )
+(C:\Users\Katelyn\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Package option `usenames' ignored on input line 216.
+Package xcolor Info: Driver file: xetex.def on input line 225.
+
+(C:\Users\Katelyn\AppData\Roaming\MiKTeX\2.9\tex\latex\colortbl\colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks20
+\minrowclearance=\skip52
+)
+\rownum=\count93
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)
+(C:\Users\Katelyn\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\svgnam.def
+File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
+))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2016/11/05 v2.16a AMS math features
-\@mathmargin=\skip52
+\@mathmargin=\skip53
 
 For additional information on amsmath, use the `?' option.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
@@ -127,7 +157,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks20
+\@emptytoks=\toks21
 \ex@=\dimen112
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
@@ -137,13 +167,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count93
+\inf@bad=\count94
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count94
-\leftroot@=\count95
+\uproot@=\count95
+\leftroot@=\count96
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count96
-\DOTSCASE@=\count97
+\classnum@=\count97
+\DOTSCASE@=\count98
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -152,71 +182,74 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen114
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count98
-\c@MaxMatrixCols=\count99
+\macc@depth=\count99
+\c@MaxMatrixCols=\count100
 \dotsspace@=\muskip10
-\c@parentequation=\count100
-\dspbrk@lvl=\count101
-\tag@help=\toks21
-\row@=\count102
-\column@=\count103
-\maxfields@=\count104
-\andhelp@=\toks22
+\c@parentequation=\count101
+\dspbrk@lvl=\count102
+\tag@help=\toks22
+\row@=\count103
+\column@=\count104
+\maxfields@=\count105
+\andhelp@=\toks23
 \eqnshift@=\dimen115
 \alignsep@=\dimen116
 \tagshift@=\dimen117
 \tagwidth@=\dimen118
 \totwidth@=\dimen119
 \lineht@=\dimen120
-\@envbody=\toks23
-\multlinegap=\skip53
-\multlinetaggap=\skip54
-\mathdisplay@stack=\toks24
+\@envbody=\toks24
+\multlinegap=\skip54
+\multlinetaggap=\skip55
+\mathdisplay@stack=\toks25
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 ) ("n-Bit ALU.aux")
 \openout1 = `"n-Bit ALU.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 File: wne.eps Graphic file (type eps)
 <wne.eps>
 File: department.eps Graphic file (type eps)
  <department.eps>
-LaTeX Font Info:    Try loading font information for U+msa on input line 45.
+LaTeX Font Info:    Try loading font information for U+msa on input line 46.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 45.
+LaTeX Font Info:    Try loading font information for U+msb on input line 46.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 ]
-File: rca_sim_results_example.png Graphic file (type QTm)
+File: Scalable_rca.png Graphic file (type QTm)
 
-<use  "rca_sim_results_example.png" > [2] ("n-Bit ALU.aux") ) 
+<use  "Scalable_rca.png" > [2] [3]
+File: rca_sim_results_example.png Graphic file (type QTm)
+ <use  "rca_sim_results_example.png" >
+[4] ("n-Bit ALU.aux") ) 
 Here is how much of TeX's memory you used:
- 2216 strings out of 427834
- 26495 string characters out of 3152470
- 93617 words of memory out of 3000000
- 6165 multiletter control sequences out of 15000+200000
+ 2927 strings out of 427834
+ 35367 string characters out of 3152470
+ 115169 words of memory out of 3000000
+ 6860 multiletter control sequences out of 15000+200000
  8317 words of font info for 36 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 32i,10n,24p,487b,288s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,12n,35p,493b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on n-Bit*ALU.pdf (2 pages).
+Output written on n-Bit*ALU.pdf (4 pages).
