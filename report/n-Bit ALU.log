@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.9.21)  24 OCT 2017 15:51
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.9.21)  26 OCT 2017 19:17
 entering extended mode
 **"./n-Bit ALU.tex"
 ("n-Bit ALU.tex"
@@ -237,19 +237,35 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 ]
+File: ALU_top_level.png Graphic file (type QTm)
+
+<use  "ALU_top_level.png" > [2]
 File: Scalable_rca.png Graphic file (type QTm)
+ <use  "Scalable_rca.png" > [3]
+File: ALU_sim.png Graphic file (type QTm)
 
-<use  "Scalable_rca.png" > [2] [3]
+<use  "ALU_sim.png" >
 File: rca_sim_results_example.png Graphic file (type QTm)
- <use  "rca_sim_results_example.png" >
-[4] ("n-Bit ALU.aux") ) 
-Here is how much of TeX's memory you used:
- 2927 strings out of 427834
- 35367 string characters out of 3152470
- 115169 words of memory out of 3000000
- 6860 multiletter control sequences out of 15000+200000
- 8317 words of font info for 36 fonts, out of 3000000 for 9000
- 1328 hyphenation exceptions out of 8191
- 41i,12n,35p,493b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <use  "rca_sim_results_example.png" > [4]
+File: example_subtraction.png Graphic file (type QTm)
 
-Output written on n-Bit*ALU.pdf (4 pages).
+<use  "example_subtraction.png" >
+File: example_rotate.png Graphic file (type QTm)
+ <use  "example_rotate.png" >
+File: example_inthedark.png Graphic file (type QTm)
+
+<use  "example_inthedark.png" > [5] [6] ("n-Bit ALU.aux")
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2954 strings out of 427834
+ 35825 string characters out of 3152470
+ 115169 words of memory out of 3000000
+ 6880 multiletter control sequences out of 15000+200000
+ 8325 words of font info for 37 fonts, out of 3000000 for 9000
+ 1328 hyphenation exceptions out of 8191
+ 41i,12n,35p,587b,295s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on n-Bit*ALU.pdf (6 pages).

@@ -18,5 +18,6 @@ Outputs
 C: Green LEDs 3 down to 0, as well as hex displays 1 and 0  
 Carry/Borrow out: Green LED 5, as well as hex display 2  
 Overflow: Green LED 7, as well as hex display 3  
+ 
 The basic operations to be selected with switches 15 down to 13 are as follows:  
 ![Requirements](/requirements.png)

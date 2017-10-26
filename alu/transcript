@@ -1,0 +1,47 @@
+# Compile of alu.vhd was successful.
+# Compile of alu_tb.vhd was successful with warnings.
+# Compile of and_gate.vhd was successful.
+# Compile of concurrent_ssd.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of inverter.vhd was successful.
+# Compile of or_gate.vhd was successful.
+# Compile of or_gate_3i.vhd was successful.
+# Compile of scalable_rca.vhd was successful.
+# Compile of xor_gate_3i.vhd was successful.
+# Compile of xor_struct.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.alu_tb
+# vsim -gui work.alu_tb 
+# Start time: 14:47:06 on Oct 26,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.alu_tb(alu_tb_arch)
+# Loading work.alu(alu_arch)
+# Loading work.scalable_rca(scalable_rca_arch)
+# Loading work.full_adder(full_adder_arch)
+# Loading work.and_gate(and_gate_arch)
+# Loading work.or_gate_3i(or_gate_3i_arch)
+# Loading work.xor_gate_3i(xor_gate_3i_arch)
+# Loading work.xor_struct(xor_struct_arch)
+# Loading work.inverter(inverter_arch)
+# Loading work.or_gate(or_gate_arch)
+# Loading work.concurrent_ssd(concurrent_ssd_arch)
+# ** Warning: (vsim-3473) Component instance "A_negsegs : ssd_negs" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/U1 File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu.vhd
+# ** Warning: (vsim-3473) Component instance "B_negsegs : ssd_negs" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/U1 File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu.vhd
+# ** Warning: (vsim-3473) Component instance "C_negsegs : ssd_negs" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/U1 File: F:/New Schoolwork/Fall 2017/VHDL/ALU/alu/alu.vhd
+add wave -position insertpoint  \
+sim:/alu_tb/ABUSTEST \
+sim:/alu_tb/BBUSTEST \
+sim:/alu_tb/CBUSTEST \
+sim:/alu_tb/CBINTEST \
+sim:/alu_tb/CBOUTTEST \
+sim:/alu_tb/OVTEST \
+sim:/alu_tb/FBUSTEST
+run 2us
+# End time: 19:18:21 on Oct 26,2017, Elapsed time: 4:31:15
+# Errors: 0, Warnings: 3
