@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.9.21)  26 OCT 2017 19:17
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.9.21)  26 OCT 2017 19:46
 entering extended mode
-**"./n-Bit ALU.tex"
-("n-Bit ALU.tex"
+**./Proj2_Katelyn_Charbonneau.tex
+(Proj2_Katelyn_Charbonneau.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -204,8 +204,9 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \mathdisplay@stack=\toks25
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
-) ("n-Bit ALU.aux")
-\openout1 = `"n-Bit ALU.aux"'.
+)
+(Proj2_Katelyn_Charbonneau.aux)
+\openout1 = `Proj2_Katelyn_Charbonneau.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
@@ -222,7 +223,7 @@ LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 File: wne.eps Graphic file (type eps)
-<wne.eps>
+ <wne.eps>
 File: department.eps Graphic file (type eps)
  <department.eps>
 LaTeX Font Info:    Try loading font information for U+msa on input line 46.
@@ -254,18 +255,14 @@ File: example_rotate.png Graphic file (type QTm)
  <use  "example_rotate.png" >
 File: example_inthedark.png Graphic file (type QTm)
 
-<use  "example_inthedark.png" > [5] [6] ("n-Bit ALU.aux")
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+<use  "example_inthedark.png" > [5] [6] (Proj2_Katelyn_Charbonneau.aux) ) 
 Here is how much of TeX's memory you used:
- 2954 strings out of 427834
- 35825 string characters out of 3152470
+ 2953 strings out of 427834
+ 35976 string characters out of 3152470
  115169 words of memory out of 3000000
  6880 multiletter control sequences out of 15000+200000
  8325 words of font info for 37 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 41i,12n,35p,587b,295s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,12n,35p,601b,295s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on n-Bit*ALU.pdf (6 pages).
+Output written on Proj2_Katelyn_Charbonneau.pdf (6 pages).
